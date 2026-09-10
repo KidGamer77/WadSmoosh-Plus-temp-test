@@ -67,6 +67,7 @@ RES_FILES = [
     'zscript/wf_sbar.id1.zs',
     'zscript/wf_id1weap.zs',
     'zscript/wf_je4boss.zs',
+    'zscript/wf_pl2boss.zs',
     # CyberMastermind sprites (LostEpisodes2-1_Patch.wad). Files live in res/sprites/.
     'sprites/CYMMA1.lmp', 'sprites/CYMMA2.lmp', 'sprites/CYMMA3.lmp', 'sprites/CYMMA4.lmp',
     'sprites/CYMMA5.lmp', 'sprites/CYMMA6.lmp', 'sprites/CYMMA7.lmp', 'sprites/CYMMA8.lmp',
