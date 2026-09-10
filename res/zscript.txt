@@ -10,3 +10,4 @@ version "4.12"
 // DO NOT include:
 //   zscript/wf_sbar.id1.zs     — duplicate WadFusionStatusBar / Id24 classes
 //   zscript/wf_sigil2boss.zs   — SpiderMastermindSigil2 already handled in wf_handler.zs
+//   zscript/wf_pl2boss.zs      — not in RES_FILES; include crashes UZDoom

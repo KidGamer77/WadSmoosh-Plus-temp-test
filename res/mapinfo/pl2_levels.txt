@@ -303,12 +303,14 @@ map P2_MAP30 "The Gatewatcher"
     cluster = 52
     par = 180
     allowmonstertelefrags
+    nointermission
+    nosoundclipping
     music = "D_JP_CAT"
-    next = endgame
+    next = EndGame
     {
-        pic = "P2_INTER"
-        music = "D_JA_CER"
-        cast
+        Pic = "P2BOSSBK"
+        Music = "D_JA_CER"
+        Cast
     }
 }
 
