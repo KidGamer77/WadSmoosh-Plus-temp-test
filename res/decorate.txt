@@ -1,0 +1,64 @@
+// CyberMastermind — Lost Episodes ZDoom Patch 2.0 sprites (CYMM*)
+// Doomednum 32000. 3115 is ID24 hanging torso in DEHACKED.txt.
+// MAPINFO specialaction + A_BossDeath + cluster 86 exittext end the map.
+// Do NOT A_ExitLevel from this actor.
+
+actor CyberMastermind 32000
+{
+    Health 5000
+    Radius 80
+    Height 100
+    Speed 12
+    PainChance 30
+    Mass 1000
+    Monster
+    +FLOORCLIP
+    +BOSS
+    +NORADIUSDMG
+    +MISSILEMORE
+    +DONTMORPH
+    +BOSSDEATH
+    +DONTGIB
+    +NOICEDEATH
+    SeeSound "cyber/sight"
+    PainSound "spider/pain"
+    DeathSound "cyber/death"
+    ActiveSound "spider/active"
+    Obituary "%o was destroyed by the cyber-mastermind."
+    Decal BulletChip
+    States
+    {
+    Spawn:
+        CYMM AB 10 A_Look
+        Loop
+    See:
+        CYMM AABB 3 A_Chase
+        CYMM B 0 A_StartSound("spider/walk", CHAN_BODY, CHANF_DEFAULT, 1, ATTN_IDLE)
+        CYMM CCDD 3 A_Chase
+        CYMM D 0 A_StartSound("spider/walk", CHAN_BODY, CHANF_DEFAULT, 1, ATTN_IDLE)
+        CYMM EEFF 3 A_Chase
+        CYMM F 0 A_StartSound("spider/walk", CHAN_BODY, CHANF_DEFAULT, 1, ATTN_IDLE)
+        Loop
+    Missile:
+        CYMM A 20 A_FaceTarget
+        CYMM GHGH 4 A_SPosAttack
+        CYMM H 0 A_FaceTarget
+        CYMM I 0 A_SpawnProjectile("Rocket", 32, 0, 0)
+        CYMM IJ 4 A_SPosAttack
+        CYMM J 1 A_SpidRefire
+        Goto Missile+1
+    Pain:
+        CYMM K 3
+        CYMM K 3 A_Pain
+        Goto See
+    Death:
+        CYMM L 8
+        CYMM M 8 A_Scream
+        CYMM N 6
+        CYMM O 6 A_Fall
+        CYMM PQRST 6
+        CYMM U 8 A_BossDeath
+        CYMM U -1
+        Stop
+    }
+}

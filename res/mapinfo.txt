@@ -1,0 +1,92 @@
+// WadSmoosh Plus / UZDoom 5.x
+// iwadinfo.txt already pulls mapinfo/doomcommon.txt.
+// Do NOT include mapinfo/doom2.txt (double parse).
+// Do NOT include mapinfo/doom2_bfg_levels.txt
+// Do NOT include mapinfo/doom2_nonbfg_levels.txt
+// Those two files double-define MAP31/MAP32 against doom2_secret_levels.txt.
+// doom2_secret_levels.txt MUST stay in RES_FILES.
+
+include mapinfo/doom1_levels.txt
+include mapinfo/sigil_levels.txt
+include mapinfo/sigil2_levels.txt
+include mapinfo/doom2_levels.txt
+include mapinfo/doom2_secret_levels.txt
+include mapinfo/masterlevels.txt
+include mapinfo/tnt_levels.txt
+include mapinfo/tntr_levels.txt
+include mapinfo/tnt2_levels.txt
+include mapinfo/plutonia_levels.txt
+include mapinfo/pl2_levels.txt
+include mapinfo/prcp_levels.txt
+include mapinfo/doomzero_levels.txt
+include mapinfo/id1_levels.txt
+include mapinfo/hell2pay_levels.txt
+include mapinfo/perdgate_levels.txt
+include mapinfo/neis_levels.txt
+include mapinfo/jptr_levels.txt
+include mapinfo/jme4_levels.txt
+include mapinfo/freedoom1_levels.txt
+include mapinfo/freedoom2_levels.txt
+
+GameInfo
+{
+    CreditPage = "CREDIT"
+    TitleMusic = "$MUSIC_DM2TTL"
+    TitleTime = 11
+    PageTime = 5
+    FinaleMusic = "$MUSIC_READ_M"
+    FinaleFlat = "SLIME16"
+    FinalePage = "CREDIT", "VICTORY2", "ENDPIC"
+    InfoPage = "HELP", "CREDIT"
+    QuitSound = "menu/quit1"
+    BorderFlat = "GRNROCK"
+    DrawReadThis = false
+    IntermissionMusic = "$MUSIC_DM2INT"
+    QuitMessages = "$QUITMSG", "$QUITMSG1", "$QUITMSG2", "$QUITMSG3",
+        "$QUITMSG4", "$QUITMSG5", "$QUITMSG6", "$QUITMSG7", "$QUITMSG8",
+        "$QUITMSG9", "$QUITMSG10", "$QUITMSG11", "$QUITMSG12",
+        "$QUITMSG13", "$QUITMSG14"
+    AddEventHandlers = "WadFusionHandler", "WadFusionMusicHandler", "Id1WeaponHandler", "JE4BossFix"
+    StatusBarClass = "WadFusionStatusBar"
+}
+
+clearepisodes
+
+episode E1M1 { name = "Knee-Deep in the Dead" optional }
+episode E2M1 { name = "The Shores of Hell" optional }
+episode E3M1 { name = "Inferno" optional }
+episode E4M1 { name = "Thy Flesh Consumed" optional }
+episode E5M1 { name = "SIGIL" optional }
+episode E6M1 { name = "SIGIL II" optional }
+episode MAP01 { name = "Hell On Earth" optional }
+episode NV_MAP01 { name = "No Rest for the Living" optional }
+episode ML_MAP01 { name = "The Master Levels" optional }
+episode TN_MAP01 { name = "TNT: Evilution" optional }
+episode T2_MAP01 { name = "TNT: Devilution" optional }
+episode TR_MAP01 { name = "TNT: Revilution" optional }
+episode PL_MAP01 { name = "The Plutonia Experiment" optional }
+episode P2_MAP01 { name = "Plutonia 2" optional }
+episode PRCP_MAP01 { name = "Plutonia Revisited" optional }
+episode DZ_MAP01 { name = "Doom Zero" optional }
+episode LR_MAP01 { name = "The Vulcan Abyss" optional }
+episode LR_MAP08 { name = "Counterfeit Eden" optional }
+episode HP_MAP01 { name = "Hell To Pay" optional }
+episode PG_MAP01 { name = "Perdition's Gate" optional }
+episode NS_E1M1 { name = "1994 Ways To Die" optional }
+episode NS_E2M1 { name = "The Depths of Doom" optional }
+episode NS_E3M1 { name = "Woe" optional }
+episode NS_E4M1 { name = "Blood Stained Earth" optional }
+episode JPTR_E1M1 { name = "Massacre on Callisto" optional }
+episode JPTR_E2M1 { name = "The Killing Fields of Io" optional }
+episode JPTR_E3M1 { name = "Hell's Gate - The Red Spot" optional }
+episode JE4_MAP01 { name = "Remnants of Earth" optional }
+episode FD1_E1M1 { name = "Outpost Outbreak" optional }
+episode FD1_E2M1 { name = "Military Labs" optional }
+episode FD1_E3M1 { name = "Event Horizon" optional }
+episode FD1_E4M1 { name = "Double Impact" optional }
+episode FD2_MAP01 { name = "Destination: Earth" optional }
+
+defaultmap
+{
+    sucktime = 1
+}

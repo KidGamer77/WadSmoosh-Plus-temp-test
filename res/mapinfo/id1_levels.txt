@@ -1,0 +1,259 @@
+// doom-id1 -- Legacy of Rust
+// Defaults apply only to LR_* maps in this file.
+
+defaultmap
+{
+    sucktime = 1
+    BorderTexture = "FLOOR9_2"
+    InterMusic = "D_WELCOM"
+    ExitPic = "ID1INTER"
+}
+
+map LR_MAP01 "Scar Gate"
+{
+    next = "LR_MAP02"
+    secretnext = "LR_MAP02"
+    titlepatch = "XWILV00"
+    sky1 = "SKYX1"
+    cluster = 55
+    par = 30
+    music = "D_WELCOM"
+    Author = "Samuel Villarreal"
+}
+
+map LR_MAP02 "Sanguine Wastes"
+{
+    next = "LR_MAP03"
+    secretnext = "LR_MAP15"
+    titlepatch = "XWILV01"
+    sky1 = "SKYX3"
+    cluster = 55
+    par = 90
+    music = "D_SHORES"
+    Author = "Xaser Acheron"
+}
+
+map LR_MAP03 "Spirit Drains"
+{
+    next = "LR_MAP04"
+    secretnext = "LR_MAP04"
+    titlepatch = "XWILV02"
+    sky1 = "SKYX3"
+    cluster = 55
+    par = 120
+    music = "D_BILGE"
+    Author = "Thomas Carter"
+}
+
+map LR_MAP04 "Descending Inferno"
+{
+    next = "LR_MAP05"
+    secretnext = "LR_MAP05"
+    titlepatch = "XWILV03"
+    sky1 = "SKYX3"
+    cluster = 55
+    par = 120
+    music = "D_REGARD"
+    Author = "Samuel Villarreal"
+}
+
+map LR_MAP05 "Creeping Hate"
+{
+    next = "LR_MAP06"
+    secretnext = "LR_MAP06"
+    titlepatch = "XWILV04", 1
+    sky1 = "SKYX4A"
+    cluster = 55
+    par = 90
+    music = "D_LAUGH"
+    Author = "Samuel Villarreal"
+}
+
+map LR_MAP06 "The Coiled City"
+{
+    next = "LR_MAP07"
+    secretnext = "LR_MAP07"
+    titlepatch = "XWILV05", 1
+    sky1 = "SKYX4A"
+    cluster = 55
+    par = 180
+    music = "D_CLOUDY"
+    Author = "Xaser Acheron"
+}
+
+map LR_MAP07 "Forfeited Salvation"
+{
+    next = EndPic, "CREDIT"
+    secretnext = EndPic, "CREDIT"
+    titlepatch = "XWILV06", 1
+    sky1 = "SKYX4A"
+    cluster = 55
+    par = 120
+    music = "D_TACTIC"
+    Author = "Samuel Villarreal"
+}
+
+map LR_MAP15 "Ash Mill"
+{
+    next = "LR_MAP03"
+    secretnext = "LR_MAP03"
+    titlepatch = "XWILV07"
+    sky1 = "SKYX3"
+    cluster = 55
+    par = 210
+    music = "D_OPENIN"
+    Author = "Xaser Acheron"
+}
+
+map LR_MAP08 "Second Coming"
+{
+    next = "LR_MAP09"
+    secretnext = "LR_MAP09"
+    titlepatch = "XWILV10"
+    sky1 = "SKYX2"
+    cluster = 56
+    par = 120
+    music = "D_BONK"
+    Author = "Ethan Watson & Xaser Acheron"
+}
+
+map LR_MAP09 "Falsehood"
+{
+    next = "LR_MAP10"
+    secretnext = "LR_MAP10"
+    titlepatch = "XWILV11"
+    sky1 = "SKYX2"
+    cluster = 56
+    par = 270
+    music = "D_DRIVER"
+    Author = "Samuel Villarreal"
+}
+
+map LR_MAP10 "Dis Union"
+{
+    next = "LR_MAP11"
+    secretnext = "LR_MAP16"
+    titlepatch = "XWILV12"
+    sky1 = "SKYX2"
+    cluster = 56
+    par = 90
+    music = "D_WIZARD"
+    Author = "Ethan Watson"
+}
+
+map LR_MAP11 "Echoes of Pain"
+{
+    next = "LR_MAP12"
+    secretnext = "LR_MAP12"
+    titlepatch = "XWILV13"
+    sky1 = "SKYX2"
+    cluster = 56
+    par = 210
+    music = "D_DEJAVU"
+    Author = "Samuel Villarreal"
+}
+
+map LR_MAP12 "The Rack"
+{
+    next = "LR_MAP13"
+    secretnext = "LR_MAP13"
+    titlepatch = "XWILV14"
+    sky1 = "SKYX4"
+    cluster = 56
+    par = 150
+    music = "D_DISGUS"
+    Author = "Samuel Villarreal"
+}
+
+map LR_MAP13 "Soul Silo"
+{
+    next = "LR_MAP14"
+    secretnext = "LR_MAP14"
+    titlepatch = "XWILV15"
+    sky1 = "SKYX4"
+    cluster = 56
+    par = 150
+    music = "D_VESPER"
+    Author = "Kevin Dunlop"
+    e2m8special
+    cyberdemonspecial
+    specialaction_lowerfloor
+}
+
+map LR_MAP14 "Brink"
+{
+    next = EndGameC
+    secretnext = EndGameC
+    titlepatch = "XWILV16", 1
+    sky1 = "SKYX5A"
+    cluster = 56
+    par = 150
+    music = "D_SKELET"
+    Author = "Xaser Acheron"
+    specialaction = "ID24TyrantBoss1", "Floor_LowerToNearest", 666, 8
+    specialaction = "ID24TyrantBoss2", "Floor_LowerToNearest", 667, 8
+}
+
+map LR_MAP16 "Panopticon"
+{
+    next = "LR_MAP11"
+    secretnext = "LR_MAP11"
+    titlepatch = "XWILV17"
+    sky1 = "SKYX2"
+    cluster = 56
+    par = 150
+    music = "D_HELFOR"
+    Author = "Xaser Acheron"
+}
+
+cluster 55
+{
+    flat = "SLIME20"
+    music = "D_SHORES"
+    exittext = "Damn.",
+    "",
+    "The oldest trap in the book, and you fell",
+    "right into it. Even the best make mistakes.",
+    "",
+    "As you fade into unconsciousness, an",
+    "epiphany surges through the pain: the base",
+    "is beyond recovery, and the UAC knew it.",
+    "Why send their best agent on a suicide run?",
+    "There's something else at stake. What are",
+    "they hiding on this barren, bleeding rock?",
+    "",
+    "As they toss your half-conscious form into",
+    "a rusty iron cage, you vow to find answers.",
+    "",
+    "Time to carve a legacy of your own."
+}
+
+cluster 56
+{
+    flat = "FLOOR9_2"
+    music = "D_SHORES"
+    exittext = "Tick. Tock. Tick. Tock.",
+    "",
+    "The air is thick with blood and irony.",
+    "You've turned the UAC's final gambit against",
+    "them, but will they have the last laugh?",
+    "",
+    "Three. Two. One.",
+    "",
+    "Then, with a snap and a puff of ozone, the",
+    "portal winks out of existence, its crimson",
+    "maelstrom yielding to blessed silence.",
+    "",
+    "Zero.",
+    "",
+    "It's done. You've rid the world of two evils",
+    "in a single violent stroke... and survived.",
+    "Legacy can wait. You ain't finished yet."
+}
+
+// MUST be last. Clears ID1INTER / D_WELCOM / FLOOR9_2
+// so Hell To Pay and later includes do not inherit them.
+defaultmap
+{
+    sucktime = 1
+}

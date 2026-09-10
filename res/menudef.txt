@@ -1,0 +1,376 @@
+ListMenu "EpisodeMenu"
+{
+    Font "BigFont", "RED"
+    Linespacing 16
+
+    StaticPatch 50, 2, "M_EPISOD"
+    Position 30, 30
+}
+
+AddOptionMenu "OptionsMenu"
+{
+    Submenu "$WS_MENU_TITLE", "WadSmooshOptions"
+    Submenu "$WS_MENU_CREDITS", "WadSmooshCredits"
+}
+
+OptionValue "Id1WeapSwap"
+{
+    0, "Off"
+    1, "Legacy of Rust maps"
+    2, "All maps"
+}
+
+OptionValue "HudUltrawide"
+{
+    0, "Off"
+    1, "On"
+    2, "Auto"
+}
+
+OptionMenu "WadSmooshOptions"
+{
+    Title "$WS_MENU_TITLE"
+    StaticText "$WS_RESTART_TEXT", "Gold"
+
+    StaticText "Textures / compatibility", "Gold"
+    Option "$WS_MENU_FD_TEXSWAP", "wf_finaldoom_texswap", "OnOff"
+    Option "$WS_MENU_D2SKY_COMPAT", "wf_d2sky_compat", "OnOff"
+    Option "$WS_MENU_D1POIS_TEXSWAP", "wf_d1_texswap", "OnOff"
+    Option "Master Levels tex swap", "wf_masterlevels_texswap", "OnOff"
+    Option "Legacy of Rust tex swap", "wf_id1_texswap", "OnOff"
+    Option "Xbox secret exits", "wf_xbox_secret_exits", "OnOff"
+    Option "Kill count fix", "wf_killcountfix", "OnOff"
+    Option "Sigil II spider boss", "wf_sigil2_spiderboss", "OnOff"
+    Option "E1M4B black-room swap", "wf_blackroomswap_e1m4b", "OnOff"
+    Option "E1M8B black-room swap", "wf_blackroomswap_e1m8b", "OnOff"
+
+    StaticText " "
+    StaticText "Weapons", "Gold"
+    Option "LoR / ID24 weapon swap", "wf_id1_weapswap", "Id1WeapSwap"
+
+    StaticText " "
+    StaticText "HUD", "Gold"
+    Option "ID24 HUD", "wf_hud_id24", "OnOff"
+    Option "Swap health/armor", "wf_hud_swaphealtharmor", "OnOff"
+    Option "Ultrawide HUD", "wf_hud_ultrawide", "HudUltrawide"
+
+    StaticText " "
+    StaticText "Music", "Gold"
+    Option "SIGIL + Buckethead", "wf_sigil_shreds", "OnOff"
+    Option "SIGIL II + THORR", "wf_sigil2_shreds", "OnOff"
+    Option "Andrew Hulshult's IDKFA", "wf_hulshult_idkfa", "OnOff"
+    Option "Doom 3DO", "wf_doom3do", "OnOff"
+}
+
+OptionMenu "WadSmooshCredits"
+{
+    Title "$WS_MENU_CREDITS"
+    Submenu "$UD1NAME", "UDCredits"
+    Submenu "$D2E1NAME", "D2Credits"
+    Submenu "$D2E2NAME", "NVCredits"
+    Submenu "$D2MLEPNAME", "MLCredits"
+    Submenu "$TNTEPNAME", "TNCredits"
+    Submenu "$TNT2NAME", "T2Credits"
+    Submenu "$TNTRNAME", "TRCredits"
+    Submenu "$PLUTEPNAME", "PLCredits"
+    Submenu "$PL2NAME", "P2Credits"
+    Submenu "$PRCPNAME", "PRCredits"
+    Submenu "$EP5NAME", "SCredits"
+    Submenu "$S2NAME", "S2Credits"
+    Submenu "$LORNAME", "LRCredits"
+    Submenu "$DZNAME", "DZCredits"
+    Submenu "$HPNAME", "HPCredits"
+    Submenu "$PGNAME", "PGCredits"
+    Submenu "$NEISNAME", "NSCredits"
+    Submenu "$JPTRNAME", "JPTRCredits"
+    Submenu "$FD1NAME", "FD1Credits"
+    Submenu "$FD2NAME", "FD2Credits"
+    Submenu "$WS_NAME", "WSCredits"
+}
+
+OptionMenu "UDCredits"
+{
+    Title "$UD1NAME"
+    StaticText "$WS_CRED_DEVPUB", "Gold"
+    StaticText "id Software"
+    StaticText " "
+    StaticText "$WS_CRED_CODE", "Gold"
+    StaticText "John Carmack, Mike Abrash"
+    StaticText "John Romero, Dave Taylor"
+    StaticText " "
+    StaticText "$WS_CRED_ART", "Gold"
+    StaticText "Adrian Carmack, Kevin Cloud"
+    StaticText " "
+    StaticText "$WS_CRED_BIZ", "Gold"
+    StaticText "Jay Wilbur"
+    StaticText " "
+    StaticText "$WS_CRED_SUPPORT", "Gold"
+    StaticText "Shawn Green"
+    StaticText " "
+    StaticText "$WS_CRED_AUDIO_CODE", "Gold"
+    StaticText "Paul Radek"
+    StaticText " "
+    StaticText "$WS_CRED_AUDIO", "Gold"
+    StaticText "Robert \"Bobby\" Prince"
+    StaticText " "
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "John Romero, Tom Hall, Sandy Petersen,"
+    StaticText "American McGee, Shawn Green, Tim Willits,"
+    StaticText "Theresa Chasar, John \"Dr. Sleep\" Anderson"
+    StaticText " "
+    StaticText "$WS_CRED_THANKS", "Gold"
+    StaticText "Gregor Punchatz"
+}
+
+OptionMenu "D2Credits"
+{
+    Title "$D2E1NAME"
+    StaticText "$WS_CRED_DEVPUB", "Gold"
+    StaticText "id Software"
+    StaticText " "
+    StaticText "$WS_CRED_CODE", "Gold"
+    StaticText "John Carmack, John Romero, Dave Taylor"
+    StaticText " "
+    StaticText "$WS_CRED_ART", "Gold"
+    StaticText "Adrian Carmack, Kevin Cloud"
+    StaticText " "
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "John Romero, Sandy Petersen, American McGee,"
+    StaticText "Shawn Green, Tom Hall"
+    StaticText " "
+    StaticText "$WS_CRED_BIZ", "Gold"
+    StaticText "Jay Wilbur"
+    StaticText " "
+    StaticText "$WS_CRED_SUPPORT", "Gold"
+    StaticText "Shawn Green, American McGee"
+    StaticText " "
+    StaticText "$WS_CRED_AUDIO", "Gold"
+    StaticText "Robert \"Bobby\" Prince"
+    StaticText " "
+    StaticText "$WS_CRED_THANKS", "Gold"
+    StaticText "Gregor Punchatz"
+}
+
+OptionMenu "NVCredits"
+{
+    Title "$D2E2NAME"
+    StaticText "$WS_CRED_DEV", "Gold"
+    StaticText "Nerve Software"
+    StaticText " "
+    StaticText "$WS_CRED_PUB", "Gold"
+    StaticText "id Software"
+    StaticText " "
+    StaticText "$WS_CRED_ORIG", "Gold"
+    StaticText "John Carmack, John Romero, Dave Taylor,"
+    StaticText "Adrian Carmack, Kevin Cloud"
+    StaticText " "
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "Russell Meakim, Arya Iwakura"
+    StaticText " "
+    StaticText "$WS_CRED_AUDIO", "Gold"
+    StaticText "Robert \"Bobby\" Prince"
+}
+
+OptionMenu "MLCredits"
+{
+    Title "$D2MLEPNAME"
+    StaticText "$WS_CRED_PUB", "Gold"
+    StaticText "id Software"
+    StaticText " "
+    StaticText "$WS_CRED_ORIG", "Gold"
+    StaticText "John Carmack, John Romero, Dave Taylor,"
+    StaticText "Adrian Carmack, Kevin Cloud"
+    StaticText " "
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "Sverre André Kvernmo, John \"Dr. Sleep\" Anderson, Jim Flynn"
+    StaticText "Christen Klie, Tom Mustaine, Tim Willits, Theresa Chasar"
+    StaticText " "
+    StaticText "$WS_CRED_AUDIO", "Gold"
+    StaticText "Robert \"Bobby\" Prince"
+}
+
+OptionMenu "TNCredits"
+{
+    Title "$TNTEPNAME"
+    StaticText "$WS_CRED_DEV", "Gold"
+    StaticText "Team TNT"
+    StaticText " "
+    StaticText "$WS_CRED_PUB", "Gold"
+    StaticText "id Software"
+    StaticText " "
+    StaticText "$WS_CRED_ORIG", "Gold"
+    StaticText "John Carmack, John Romero, Dave Taylor,"
+    StaticText "Adrian Carmack, Kevin Cloud"
+    StaticText " "
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "Tom Mustaine, John Wakelin, Robin Patenall, John Minadeo,"
+    StaticText "Ty Halderman, Jim Dethlefsen, Jimmy Sieben, Andrew Dowswell,"
+    StaticText "Dean Johnson, Jim Lowell, Brian Kidby, William D. Whitaker,"
+    StaticText "Andre Arsenault, Dario Casali, Drake O'Brien, Christopher Buteau,"
+    StaticText "Paul Turnbull, Jim Mentzer, Mark Snell, Milo Casali, Jimmy Sieben"
+    StaticText " "
+    StaticText "$WS_CRED_MUSIC", "Gold"
+    StaticText "Jonathan El-Bizri, Josh Martel, L.A. Sieben, and Tom Mustaine"
+}
+
+OptionMenu "PLCredits"
+{
+    Title "$PLUTEPNAME"
+    StaticText "$WS_CRED_DEV", "Gold"
+    StaticText "Team TNT"
+    StaticText " "
+    StaticText "$WS_CRED_PUB", "Gold"
+    StaticText "id Software"
+    StaticText " "
+    StaticText "$WS_CRED_ORIG", "Gold"
+    StaticText "John Carmack, John Romero, Dave Taylor,"
+    StaticText "Adrian Carmack, Kevin Cloud"
+    StaticText " "
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "Dario Casali, Milo Casali"
+    StaticText " "
+    StaticText "$WS_CRED_ORIG_MUSIC", "Gold"
+    StaticText "Robert \"Bobby\" Prince"
+}
+
+OptionMenu "SCredits"
+{
+    Title "$EP5NAME"
+    StaticText "$WS_CRED_DEVPUB", "Gold"
+    StaticText "Romero Games"
+    StaticText " "
+    StaticText "$WS_CRED_LD1", "Gold"
+    StaticText "John Romero"
+    StaticText " "
+    StaticText "$WS_CRED_MUSIC", "Gold"
+    StaticText "Buckethead, James \"Jimmy\" Paddock"
+    StaticText " "
+    StaticText "$WS_CRED_COVER", "Gold"
+    StaticText "Christopher Lovell"
+    StaticText " "
+    StaticText "$WS_CRED_TEST", "Gold"
+    StaticText "Boris Klimeš, Xaser,"
+    StaticText "Kurt Baumgardner"
+}
+
+OptionMenu "S2Credits"
+{
+    Title "$S2NAME"
+    StaticText "$WS_CRED_DEVPUB", "Gold"
+    StaticText "Romero Games"
+    StaticText " "
+    StaticText "$WS_CRED_LD1", "Gold"
+    StaticText "John Romero"
+    StaticText " "
+    StaticText "$WS_CRED_MUSIC", "Gold"
+    StaticText "THORR, James \"Jimmy\" Paddock"
+}
+
+OptionMenu "LRCredits"
+{
+    Title "$LORNAME"
+    StaticText "$WS_CRED_DEVPUB", "Gold"
+    StaticText "id Software"
+    StaticText " "
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "Samuel Villarreal, Xaser Acheron,"
+    StaticText "Ethan Watson, Thomas Carter, Kevin Dunlop"
+}
+
+OptionMenu "T2Credits"
+{
+    Title "$TNT2NAME"
+    StaticText "$WS_CRED_ADDON", "Gold"
+    StaticText "TNT: Devilution (tnt2_beta6)"
+}
+
+OptionMenu "TRCredits"
+{
+    Title "$TNTRNAME"
+    StaticText "$WS_CRED_DEV", "Gold"
+    StaticText "Kyka, Devalaous, Megamur,"
+    StaticText "Jaws In Space, Eris Falling"
+}
+
+OptionMenu "P2Credits"
+{
+    Title "$PL2NAME"
+    StaticText "$WS_CRED_ADDON", "Gold"
+    StaticText "Plutonia 2"
+}
+
+OptionMenu "PRCredits"
+{
+    Title "$PRCPNAME"
+    StaticText "$WS_CRED_ADDON", "Gold"
+    StaticText "Plutonia Revisited Community Project"
+}
+
+OptionMenu "DZCredits"
+{
+    Title "$DZNAME"
+    StaticText "$WS_CRED_ADDON", "Gold"
+    StaticText "Doom Zero"
+}
+
+OptionMenu "HPCredits"
+{
+    Title "$HPNAME"
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "Tom and Bob Mustaine, Jimmy Sieben,"
+    StaticText "and the Hell To Pay team"
+}
+
+OptionMenu "PGCredits"
+{
+    Title "$PGNAME"
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "Tom and Bob Mustaine"
+}
+
+OptionMenu "NSCredits"
+{
+    Title "$NEISNAME"
+    StaticText "$WS_CRED_LD", "Gold"
+    StaticText "NaturalTvventy, Xaser, Lutz"
+}
+
+OptionMenu "JPTRCredits"
+{
+    Title "$JPTRNAME"
+    StaticText "$WS_CRED_ADDON", "Gold"
+    StaticText "Christen Klie / The Lost Episodes of Doom"
+}
+
+OptionMenu "FD1Credits"
+{
+    Title "$FD1NAME"
+    StaticText "$WS_CRED_DEV", "Gold"
+    StaticText "Freedoom project"
+}
+
+OptionMenu "FD2Credits"
+{
+    Title "$FD2NAME"
+    StaticText "$WS_CRED_DEV", "Gold"
+    StaticText "Freedoom project"
+}
+
+OptionMenu "WSCredits"
+{
+    Title "$WS_NAME"
+    StaticText "$WS_CRED_WS", "Gold"
+    StaticText "JP LeBreton"
+    StaticText " "
+    StaticText "$WS_CRED_WS_LIBRARY", "Gold"
+    StaticText "Fredrik Johansson and Revenant"
+    StaticText " "
+    StaticText "$WS_CRED_WS_TITLE_ART", "Gold"
+    StaticText "Scalliano and Hellser"
+    StaticText " "
+    StaticText "$WS_CRED_WS_EP_ART", "Gold"
+    StaticText "NightFright"
+    StaticText " "
+    StaticText "$WS_CRED_WS_CREDITS", "Gold"
+    StaticText "Shockwave_S08"
+}

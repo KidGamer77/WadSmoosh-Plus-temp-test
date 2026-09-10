@@ -1,0 +1,395 @@
+// The Lost Episodes of Doom
+
+defaultmap
+{
+    sucktime = 1
+    BorderTexture = "FLOOR7_2"
+    InterMusic = "$MUSIC_INTER"
+}
+
+// Massacre on Callisto
+map JPTR_E1M1 "UAC Spaceport"
+{
+    levelnum = 1
+    next = "JPTR_E1M2"
+    secretnext = "JPTR_E1M9"
+    titlepatch = "WILV00"
+    sky1 = "SKY1"
+    cluster = 78
+    par = 30
+    music = "$MUSIC_E1M1"
+    ExitPic = "$IN_EPI1"
+}
+
+map JPTR_E1M2 "Fusion Power Plant"
+{
+    levelnum = 2
+    next = "JPTR_E1M3"
+    secretnext = "JPTR_E1M9"
+    titlepatch = "WILV01"
+    sky1 = "SKY1"
+    cluster = 78
+    par = 75
+    music = "$MUSIC_E1M2"
+    ExitPic = "$IN_EPI1"
+}
+
+map JPTR_E1M3 "Jovian Deuterium Plant"
+{
+    levelnum = 3
+    next = "JPTR_E1M4"
+    secretnext = "JPTR_E1M9"
+    titlepatch = "WILV02"
+    sky1 = "SKY1"
+    cluster = 78
+    par = 120
+    music = "$MUSIC_E1M3"
+    ExitPic = "$IN_EPI1"
+}
+
+map JPTR_E1M4 "Jupiter Planetary Control Center"
+{
+    levelnum = 4
+    next = "JPTR_E1M5"
+    secretnext = "JPTR_E1M9"
+    titlepatch = "WILV03"
+    sky1 = "SKY1"
+    cluster = 78
+    par = 90
+    music = "$MUSIC_E1M4"
+    ExitPic = "$IN_EPI1"
+}
+
+map JPTR_E1M5 "Weapons Research Center"
+{
+    levelnum = 5
+    next = "JPTR_E1M6"
+    secretnext = "JPTR_E1M9"
+    titlepatch = "WILV04"
+    sky1 = "SKY1"
+    cluster = 78
+    par = 165
+    music = "$MUSIC_E1M5"
+    ExitPic = "$IN_EPI1"
+}
+
+map JPTR_E1M6 "Halls of Injustice"
+{
+    levelnum = 6
+    next = "JPTR_E1M7"
+    secretnext = "JPTR_E1M9"
+    titlepatch = "WILV05"
+    sky1 = "SKY1"
+    cluster = 78
+    par = 180
+    music = "$MUSIC_E1M6"
+    ExitPic = "$IN_EPI1"
+}
+
+map JPTR_E1M7 "Core of Evil"
+{
+    levelnum = 7
+    next = "JPTR_E1M8"
+    secretnext = "JPTR_E1M9"
+    titlepatch = "WILV06"
+    sky1 = "SKY1"
+    cluster = 78
+    par = 180
+    music = "$MUSIC_E1M7"
+    ExitPic = "$IN_EPI1"
+}
+
+map JPTR_E1M8 "Callisto Consecration"
+{
+    levelnum = 8
+    next = "EndGame1"
+    secretnext = "JPTR_E1M9"
+    titlepatch = "WILV07"
+    sky1 = "SKY1"
+    cluster = 78
+    par = 165
+    nointermission
+    nosoundclipping
+    baronspecial
+    specialaction_lowerfloor
+    music = "$MUSIC_E1M8"
+    ExitPic = "$IN_EPI1"
+}
+
+map JPTR_E1M9 "Callisto Secret"
+{
+    levelnum = 9
+    next = "JPTR_E1M4"
+    secretnext = "JPTR_E1M4"
+    titlepatch = "WILV08"
+    sky1 = "SKY1"
+    cluster = 78
+    par = 165
+    music = "$MUSIC_E1M9"
+    ExitPic = "$IN_EPI1"
+}
+
+// Killing Fields of Io
+map JPTR_E2M1 "Io Anomaly"
+{
+    levelnum = 11
+    next = "JPTR_E2M2"
+    secretnext = "JPTR_E2M9"
+    titlepatch = "WILV10"
+    sky1 = "SKY2"
+    cluster = 79
+    par = 90
+    music = "$MUSIC_E2M1"
+    ExitPic = "$IN_EPI2"
+}
+
+map JPTR_E2M2 "Io Munitions Works"
+{
+    levelnum = 12
+    next = "JPTR_E2M3"
+    secretnext = "JPTR_E2M9"
+    titlepatch = "WILV11"
+    sky1 = "SKY2"
+    cluster = 79
+    par = 90
+    music = "$MUSIC_E2M2"
+    ExitPic = "$IN_EPI2"
+}
+
+map JPTR_E2M3 "Io Toxic Disposal Plant"
+{
+    levelnum = 13
+    next = "JPTR_E2M4"
+    secretnext = "JPTR_E2M9"
+    titlepatch = "WILV12"
+    sky1 = "SKY2"
+    cluster = 79
+    par = 90
+    music = "$MUSIC_E2M3"
+    ExitPic = "$IN_EPI2"
+}
+
+map JPTR_E2M4 "Weapons Testing Facility"
+{
+    levelnum = 14
+    next = "JPTR_E2M5"
+    secretnext = "JPTR_E2M9"
+    titlepatch = "WILV13"
+    sky1 = "SKY2"
+    cluster = 79
+    par = 120
+    music = "$MUSIC_E2M4"
+    ExitPic = "$IN_EPI2"
+}
+
+map JPTR_E2M5 "Io Training Camp"
+{
+    levelnum = 15
+    next = "JPTR_E2M6"
+    secretnext = "JPTR_E2M9"
+    titlepatch = "WILV14"
+    sky1 = "SKY2"
+    cluster = 79
+    par = 90
+    music = "$MUSIC_E2M5"
+    ExitPic = "$IN_EPI2"
+}
+
+map JPTR_E2M6 "Io Planetary HQ"
+{
+    levelnum = 16
+    next = "JPTR_E2M7"
+    secretnext = "JPTR_E2M9"
+    titlepatch = "WILV15"
+    sky1 = "SKY2"
+    cluster = 79
+    par = 360
+    music = "$MUSIC_E2M6"
+    ExitPic = "$IN_EPI2"
+}
+
+map JPTR_E2M7 "Io Military Garrison"
+{
+    levelnum = 17
+    next = "JPTR_E2M8"
+    secretnext = "JPTR_E2M9"
+    titlepatch = "WILV16"
+    sky1 = "SKY2"
+    cluster = 79
+    par = 240
+    music = "$MUSIC_E2M7"
+    ExitPic = "$IN_EPI2"
+}
+
+map JPTR_E2M8 "The Killing Fields"
+{
+    levelnum = 18
+    next = "EndGame2"
+    secretnext = "JPTR_E2M9"
+    titlepatch = "WILV17"
+    sky1 = "SKY2"
+    cluster = 79
+    par = 135
+    nointermission
+    nosoundclipping
+    cyberdemonspecial
+    specialaction_exitlevel
+    music = "$MUSIC_E2M8"
+    ExitPic = "$IN_EPI2"
+}
+
+map JPTR_E2M9 "Io Secret"
+{
+    levelnum = 19
+    next = "JPTR_E2M6"
+    secretnext = "JPTR_E2M6"
+    titlepatch = "WILV18"
+    sky1 = "SKY2"
+    cluster = 79
+    par = 170
+    music = "$MUSIC_E2M9"
+    ExitPic = "$IN_EPI2"
+}
+
+// Hell's Gate - The Red Spot of Jupiter
+map JPTR_E3M1 "Jovian Stonehenge"
+{
+    levelnum = 21
+    next = "JPTR_E3M2"
+    secretnext = "JPTR_E3M9"
+    titlepatch = "WILV20"
+    sky1 = "SKY3"
+    cluster = 80
+    par = 90
+    music = "$MUSIC_E3M1"
+    ExitPic = "$IN_EPI3"
+}
+
+map JPTR_E3M2 "Jupiter Inferno"
+{
+    levelnum = 22
+    next = "JPTR_E3M3"
+    secretnext = "JPTR_E3M9"
+    titlepatch = "WILV21"
+    sky1 = "SKY3"
+    cluster = 80
+    par = 45
+    music = "$MUSIC_E3M2"
+    ExitPic = "$IN_EPI3"
+}
+
+map JPTR_E3M3 "Jupiter Fossil Bed"
+{
+    levelnum = 23
+    next = "JPTR_E3M4"
+    secretnext = "JPTR_E3M9"
+    titlepatch = "WILV22"
+    sky1 = "SKY3"
+    cluster = 80
+    par = 90
+    music = "$MUSIC_E3M3"
+    ExitPic = "$IN_EPI3"
+}
+
+map JPTR_E3M4 "Jupiter Mining Colony"
+{
+    levelnum = 24
+    next = "JPTR_E3M5"
+    secretnext = "JPTR_E3M9"
+    titlepatch = "WILV23"
+    sky1 = "SKY3"
+    cluster = 80
+    par = 150
+    music = "$MUSIC_E3M4"
+    ExitPic = "$IN_EPI3"
+}
+
+map JPTR_E3M5 "Jupiter Security Complex"
+{
+    levelnum = 25
+    next = "JPTR_E3M6"
+    secretnext = "JPTR_E3M9"
+    titlepatch = "WILV24"
+    sky1 = "SKY3"
+    cluster = 80
+    par = 90
+    music = "$MUSIC_E3M5"
+    ExitPic = "$IN_EPI3"
+}
+
+map JPTR_E3M6 "Somber Promenade"
+{
+    levelnum = 26
+    next = "JPTR_E3M7"
+    secretnext = "JPTR_E3M9"
+    titlepatch = "WILV25"
+    sky1 = "SKY3"
+    cluster = 80
+    par = 90
+    music = "$MUSIC_E3M6"
+    ExitPic = "$IN_EPI3"
+}
+
+map JPTR_E3M7 "Jupiter Killjoy"
+{
+    levelnum = 27
+    next = "JPTR_E3M8"
+    secretnext = "JPTR_E3M9"
+    titlepatch = "WILV26"
+    sky1 = "SKY3"
+    cluster = 80
+    par = 165
+    music = "$MUSIC_E3M7"
+    ExitPic = "$IN_EPI3"
+}
+
+map JPTR_E3M8 "Red Spot"
+{
+    levelnum = 28
+    next = "endbunny"
+    secretnext = "JPTR_E3M9"
+    titlepatch = "WILV27"
+    sky1 = "SKY3"
+    cluster = 80
+    par = 105
+    nointermission
+    nosoundclipping
+    spidermastermindspecial
+    specialaction_exitlevel
+    music = "$MUSIC_E3M8"
+    ExitPic = "$IN_EPI3"
+}
+
+map JPTR_E3M9 "Jupiter Secret"
+{
+    levelnum = 29
+    next = "JPTR_E3M7"
+    secretnext = "JPTR_E3M7"
+    titlepatch = "WILV28"
+    sky1 = "SKY3"
+    cluster = 80
+    par = 135
+    music = "$MUSIC_E3M9"
+    ExitPic = "$IN_EPI3"
+}
+
+cluster 78
+{
+    flat = "$bgflatE1"
+    music = "$MUSIC_VICTOR"
+    exittext = lookup, "JPTR_E1TEXT"
+}
+
+cluster 79
+{
+    flat = "$bgflatE2"
+    music = "$MUSIC_VICTOR"
+    exittext = lookup, "JPTR_E2TEXT"
+}
+
+cluster 80
+{
+    flat = "$bgflatE3"
+    music = "$MUSIC_VICTOR"
+    exittext = lookup, "JPTR_E3TEXT"
+}

@@ -1,0 +1,30 @@
+// WadSmoosh Plus / UZDoom 5.x
+// Live names are wf_*. ws_* exist only so old saves/menus do not break.
+
+user bool wf_d1_texswap = true;
+user bool wf_d2sky_compat = true;
+user bool wf_finaldoom_texswap = true;
+user bool wf_masterlevels_texswap = true;
+user bool wf_id1_texswap = true;
+user bool wf_killcountfix = true;
+user bool wf_xbox_secret_exits = true;
+user bool wf_sigil2_spiderboss = false;
+user bool wf_blackroomswap_e1m4b = false;
+user bool wf_blackroomswap_e1m8b = false;
+
+user int wf_id1_weapswap = 1;
+
+user bool wf_hud_id24 = false;
+user bool wf_hud_swaphealtharmor = false;
+user int wf_hud_ultrawide = 0;
+
+user bool wf_sigil_shreds = false;
+user bool wf_sigil2_shreds = false;
+user bool wf_hulshult_idkfa = false;
+user bool wf_doom3do = false;
+
+user bool ws_finaldoom_texswap = true;
+user bool ws_d1pois_texswap = true;
+user bool ws_d2sky_compat = true;
+user bool ws_id1_texswap = true;
+user bool ws_killcountfix = true;

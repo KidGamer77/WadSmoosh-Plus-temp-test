@@ -1,0 +1,94 @@
+// Remnants of Earth — JM-E4.wad
+// Maps extracted as JE4_MAP01 .. JE4_MAP08
+// Music lumps renamed so D_E4M* / D_EVIL / D_VICTOR do not clobber vanilla.
+
+defaultmap
+{
+    sucktime = 1
+    enterpic = "INTERPIC"
+    exitpic = "INTERPIC"
+    BorderTexture = "FLOOR7_2"
+}
+
+map JE4_MAP01 "Labyrinth of Fiends"
+{
+    levelnum = 481
+    next = "JE4_MAP02"
+    sky1 = "SKY4"
+    cluster = 86
+    music = "JE4_E4M1"
+}
+
+map JE4_MAP02 "Underground Sector"
+{
+    levelnum = 482
+    next = "JE4_MAP03"
+    sky1 = "SKY4"
+    cluster = 86
+    music = "JE4_E4M2"
+}
+
+map JE4_MAP03 "CPU Complex"
+{
+    levelnum = 483
+    next = "JE4_MAP04"
+    sky1 = "SKY4"
+    cluster = 86
+    music = "JE4_E4M3"
+}
+
+map JE4_MAP04 "Hive of Evil"
+{
+    levelnum = 484
+    next = "JE4_MAP05"
+    sky1 = "SKY4"
+    cluster = 86
+    music = "JE4_E4M4"
+}
+
+map JE4_MAP05 "Demilitarized Zone"
+{
+    levelnum = 485
+    next = "JE4_MAP06"
+    sky1 = "SKY4"
+    cluster = 86
+    music = "JE4_E4M5"
+}
+
+map JE4_MAP06 "Perdition's Fury"
+{
+    levelnum = 486
+    next = "JE4_MAP07"
+    sky1 = "SKY4"
+    cluster = 86
+    music = "JE4_E4M6"
+}
+
+map JE4_MAP07 "Enemy Within"
+{
+    levelnum = 487
+    next = "JE4_MAP08"
+    sky1 = "SKY4"
+    cluster = 86
+    music = "JE4_E4M7"
+}
+
+map JE4_MAP08 "Icon of Ruin"
+{
+    levelnum = 488
+    next = "EndGameC"
+    sky1 = "SKY4"
+    cluster = 86
+    nosoundclipping
+    nointermission
+    specialaction = "CyberMastermind", "Exit_Normal", 0
+    music = "JE4_E4M8"
+}
+
+cluster 86
+{
+    flat = "FLOOR7_2"
+    music = "JE4_EVIL"
+    exittext = lookup, "JE4TEXT"
+    pic = "INTERPIC"
+}

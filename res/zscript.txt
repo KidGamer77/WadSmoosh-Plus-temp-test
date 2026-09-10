@@ -1,0 +1,12 @@
+version "4.12"
+
+#include "zscript/wf_handler.zs"
+#include "zscript/wf_music.zs"
+#include "zscript/wf_xbox.zs"
+#include "zscript/wf_sbar.zs"
+#include "zscript/wf_id1weap.zs"
+#include "zscript/wf_je4boss.zs"
+
+// DO NOT include:
+//   zscript/wf_sbar.id1.zs     — duplicate WadFusionStatusBar / Id24 classes
+//   zscript/wf_sigil2boss.zs   — SpiderMastermindSigil2 already handled in wf_handler.zs
